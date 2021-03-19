@@ -7,21 +7,32 @@
 }
 
 .left {
-    width:40%;
+    width:45%;
     background-color: var(--background-color-primary);
+    background-image: url(../../assets/images/test.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 550px;
+    
+    
+    
+}
+.titel{
+    font-size: 7em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 20px;
 }
 
 .right {
-    width:60%;
+    width:55%;
     background-color: var(--background-color-secondary);
 }
 
 .logo {
-    position: absolute;
-    left: 1.67%;
-    right: 48.26%;
-    top: 23.93%;
-    bottom: 19.34%;
+   /* position: absolute;*/
+    
+    
 }
 
 .main {
