@@ -18,9 +18,5 @@ const IconButton = ({iconClass}) => {
     );
 };
 
-
-
-
-
-
 export default IconButton;
+

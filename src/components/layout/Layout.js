@@ -4,13 +4,13 @@ import styles from "./Layout.module.css";
 import React from "react";
 import IconButton from '../common/IconButton';
 
-const buttons = ['facebook', 'twitter'];
+const buttonsImage = ['facebook', 'twitter'];
 
 const showButtons =() => {
     return (
         <div>
             {
-                buttons.map((button) => {
+                buttonsImage.map((button) => {
                     return (
                         <IconButton
                             /* onClick={doStuff(button)}*/
@@ -18,6 +18,7 @@ const showButtons =() => {
                     );
                 })
             }
+
         </div>
     );
 };
@@ -38,6 +39,7 @@ const Layout = ({children}) => {
                <header className={styles.rightHeader}>
                    <div>
                        {showButtons()}
+
                    </div>
                </header>
                <section className={styles.content}>
