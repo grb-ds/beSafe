@@ -3,7 +3,8 @@ import Head  from 'next/head';
 import styles from "./Layout.module.css";
 //import { KeyboardArrowDownRounded } from "@material-ui/icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faFacebook } from "@fortawesome/free-brands-svg-icons"
+import { faTwitterSquare, faFacebookSquare } from "@fortawesome/free-brands-svg-icons"
+import React from "react";
 
 const Layout = ({children}) => {
     return (
@@ -18,9 +19,9 @@ const Layout = ({children}) => {
 
            </div>
            <div className={styles.right}>
-               <header>
-                   <FontAwesomeIcon className={styles.icon} icon={faTwitter} />
-                   <FontAwesomeIcon icon={faFacebook} />
+               <header className={styles.iconHeader}>
+                   <FontAwesomeIcon className={styles.icon} icon={faTwitterSquare} size="4x" />
+                   <FontAwesomeIcon className={styles.icon} icon={faFacebookSquare} size="4x" />
 
                </header>
            </div>

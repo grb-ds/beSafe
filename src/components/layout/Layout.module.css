@@ -48,3 +48,15 @@
     text-align: center;
     padding: 1rem;
 }
+.iconHeader {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem;
+    padding: 1rem;
+
+}
+
+.icon {
+    color: var(--text-color-primary);
+    margin: 1rem;
+  }
