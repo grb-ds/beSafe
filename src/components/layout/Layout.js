@@ -1,10 +1,26 @@
 import ReactDOM from 'react-dom'
-import Head  from 'next/head';
+import Head  from 'next/head'; //TODO
 import styles from "./Layout.module.css";
-//import { KeyboardArrowDownRounded } from "@material-ui/icons";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitterSquare, faFacebookSquare } from "@fortawesome/free-brands-svg-icons"
 import React from "react";
+import IconButton from '../common/IconButton';
+
+const buttons = ['facebook', 'twitter'];
+
+const showButtons =() => {
+    return (
+        <div>
+            {
+                buttons.map((button) => {
+                    return (
+                        <IconButton
+                            /* onClick={doStuff(button)}*/
+                            iconClass={button}/>
+                    );
+                })
+            }
+        </div>
+    );
+};
 
 const Layout = ({children}) => {
     return (
@@ -19,11 +35,23 @@ const Layout = ({children}) => {
 
            </div>
            <div className={styles.right}>
-               <header className={styles.iconHeader}>
-                   <FontAwesomeIcon className={styles.icon} icon={faTwitterSquare} size="4x" />
-                   <FontAwesomeIcon className={styles.icon} icon={faFacebookSquare} size="4x" />
-
+               <header className={styles.rightHeader}>
+                   <div>
+                       {showButtons()}
+                   </div>
                </header>
+               <section className={styles.content}>
+                   <div>
+                       <h2 className={styles.subtitle}>Safety App for Women</h2>
+                   </div>
+                   <div>
+                       <h4 className={styles.paragraph}>If you could count the skeletons in my closet.
+                           Under my bed and up under my faucet. Then you would know I've completely lost it.
+                           Is he nuts? No, he's insane. If you could count the skeletons in my closet.
+                           Under my bed and up under my faucet. Then you would know I've completely lost it.
+                           Is he nuts? No, he's insane.</h4>
+                   </div>
+               </section>
            </div>
 
        </div>

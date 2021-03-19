@@ -48,15 +48,27 @@
     text-align: center;
     padding: 1rem;
 }
-.iconHeader {
+.rightHeader {
     display: flex;
     justify-content: flex-end;
     margin: 1rem;
     padding: 1rem;
-
 }
 
-.icon {
+
+.content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.subtitle {
     color: var(--text-color-primary);
-    margin: 1rem;
-  }
+}
+
+.paragraph {
+    color: var(--text-color-primary);
+    width: 70%;
+
+
+}

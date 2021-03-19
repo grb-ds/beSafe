@@ -1,0 +1,7 @@
+
+.iconButton {
+    color: var(--text-color-primary);
+    margin: 1rem;
+    border: none;
+    background-color: transparent;
+}
