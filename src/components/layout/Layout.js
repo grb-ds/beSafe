@@ -21,12 +21,7 @@ const Layout = ({children}) => {
                <header>
                    <FontAwesomeIcon className={styles.icon} icon={faTwitter} />
                    <FontAwesomeIcon icon={faFacebook} />
-                  {/* // Solid
-                   <FontAwesomeIcon icon={["fas", "coffee"]} />
-                   <div>Name</div>
 
-                   <KeyboardArrowDownRounded />
-*/}
                </header>
            </div>
 
