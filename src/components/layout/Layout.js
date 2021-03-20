@@ -47,11 +47,12 @@ const Layout = ({children}) => {
                        <h2 className={styles.subtitle}>Safety App for Women</h2>
                    </div>
                    <div>
-                       <h4 className={styles.paragraph}>If you could count the skeletons in my closet.
-                           Under my bed and up under my faucet. Then you would know I've completely lost it.
-                           Is he nuts? No, he's insane. If you could count the skeletons in my closet.
-                           Under my bed and up under my faucet. Then you would know I've completely lost it.
-                           Is he nuts? No, he's insane.</h4>
+                       <h3 className={styles.paragraph}>Women Safety app is the best app to inform and update your close ones if you are in an unsafe place. The app is the fastest and easiest way to update your close ones about your location and other details.</h3>
+                        <h3 className={styles.paragraph}>You will never feel unsafe with this app. Keep it installed and stay alert!</h3>                           
+                   </div>
+                   <div>
+                       <button> Get More Info</button>
+                       <button> Install BeSafe</button>
                    </div>
                </section>
            </div>
