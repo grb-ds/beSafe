@@ -34,4 +34,26 @@ a {
 * {
   box-sizing: border-box;
 }
+button{
+  background-color: red;
+  padding: .75rem 1.75rem;
+  margin: 1rem;
+  background-color: var(--text-color-secondary);
+  border: 2px solid var(--text-color-primary);
+  outline: none;
+  border-radius: 5px;
+  font-family: var(--font-family);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--text-color-primary);
+}
+button:active {
+  background-color: var(--text-color-primary);
+  /*box-shadow: 0 2px whitesmoke;*/
+  transform: translateY(4px);
+  border:2px solid var(--text-color-secondary) ;
+  color: var(--background-color-primary);
+}
 
